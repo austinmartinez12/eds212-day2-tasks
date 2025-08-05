@@ -1,0 +1,11 @@
+---
+title: "Day 2 after class assignment"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
