@@ -24,3 +24,11 @@ x <- 1.2
 eval(eq2)
 ```
 
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+ggplot(data = penguins, aes(x = bill_length_mm, y= bill_depth_mm)) + geom_jitter(aes(color = species))+ scale_color_manual(values = c("darkorange", "purple", "cyan4")) + labs(y = "Bill Depth (mm)", x = "Bill Length (mm)", title = "Palmer peguins size meausrments", 
+       subtitle = "palmer archipelago, Antartica (2007 - 2009", caption = "collected by Dr. Kristen Gorman")
+```
+
