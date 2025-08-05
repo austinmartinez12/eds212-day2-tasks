@@ -120,6 +120,24 @@ The following objects are masked from 'package:datasets':
     penguins, penguins_raw</code></pre>
 </div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#1</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>eq1 <span class="ot">&lt;-</span> <span class="fu">D</span>(<span class="at">expr =</span> <span class="fu">expression</span>(x<span class="sc">^</span><span class="dv">2</span>), <span class="at">name =</span> <span class="st">"x"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">eval</span>(eq1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#2</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>eq2 <span class="ot">&lt;-</span> <span class="fu">D</span>(<span class="at">expr =</span> <span class="fu">expression</span>(<span class="dv">2</span> <span class="sc">*</span> (<span class="dv">3</span><span class="sc">*</span>x <span class="sc">+</span> <span class="dv">2</span>)<span class="sc">^</span><span class="dv">4</span> <span class="sc">-</span> <span class="dv">5</span>), <span class="at">name =</span> <span class="st">"x"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fl">1.2</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">eval</span>(eq2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4214.784</code></pre>
+</div>
+</div>
 
 </main>
 <!-- /main column -->

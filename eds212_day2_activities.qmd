@@ -9,4 +9,18 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-#
+```{r}
+#1
+eq1 <- D(expr = expression(x^2), name = "x")
+x <- 3
+eval(eq1)
+
+```
+
+```{r}
+#2
+eq2 <- D(expr = expression(2 * (3*x + 2)^4 - 5), name = "x")
+x <- 1.2
+eval(eq2)
+```
+
